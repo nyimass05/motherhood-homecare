@@ -1,40 +1,105 @@
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Motherhood Homecare</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Poppins', sans-serif; line-height: 1.6; background: #fff8f9; color: #333; }
+    header { text-align: center; padding: 2rem; background-color: #ffe4ec; }
+    header img { max-height: 100px; margin-bottom: 1rem; }
+    header h1 { font-size: 2.2rem; color: #b3005e; }
+    nav { background: #b3005e; color: white; padding: 1rem; text-align: center; }
+    nav a { color: white; margin: 0 1rem; text-decoration: none; font-weight: 500; }
+    section { padding: 2rem; max-width: 960px; margin: auto; }
+    h2 { color: #b3005e; margin-bottom: 1rem; }
+    ul { margin-left: 1.5rem; }
+    form input, form textarea { width: 100%; padding: 0.8rem; margin: 0.5rem 0; border: 1px solid #ccc; border-radius: 5px; }
+    form button { background: #b3005e; color: white; padding: 0.8rem 1.5rem; border: none; border-radius: 5px; cursor: pointer; }
+    .gallery img { max-width: 200px; margin: 0.5rem; border-radius: 10px; }
+    footer { background: #b3005e; color: white; text-align: center; padding: 1rem; margin-top: 2rem; }
+  </style>
 </head>
-<body class="bg-pink-50 text-gray-800">
-
-  <!-- Header -->
-  <header class="bg-pink-100 text-center py-6 shadow-md">
-    <img src="PHOTO-2025-05-05-10-26-45.jpg" alt="Logo Motherhood Care" class="mx-auto w-32 h-32 mb-4 rounded-full shadow-lg" />
-    <h1 class="text-3xl font-bold text-pink-700">Motherhood Homecare</h1>
-    <p class="text-lg mt-2 text-pink-600">Merawat dengan hati di rumah Anda</p>
+<body>
+  <header>
+    <img src="PHOTO-2025-05-05-10-26-45.jpg" alt="Logo Motherhood Homecare">
+    <h1>Motherhood Homecare</h1>
+    <p>Perawatan terbaik bagi ibu dan anak langsung di rumah Anda</p>
   </header>
 
-  <!-- Visi Misi -->
-  <section class="py-10 px-4 max-w-3xl mx-auto text-center">
-    <h2 class="text-2xl font-semibold text-pink-700 mb-4">Visi & Misi</h2>
-    <div class="bg-white p-6 rounded-xl shadow space-y-4 text-justify">
-      <div>
-        <h3 class="font-bold text-lg">Visi</h3>
-        <p>Menjadi penyedia layanan homecare terbaik yang memberikan perawatan penuh kasih, aman, dan profesional bagi ibu dan keluarga di rumah.</p>
-      </div>
-      <div>
-        <h3 class="font-bold text-lg">Misi</h3>
-        <ul class="list-disc list-inside space-y-1">
-          <li>Menyediakan layanan perawatan rumah berkualitas tinggi yang berfokus pada kebutuhan ibu dan anak.</li>
-          <li>Memberikan edukasi dan pendampingan profesional dalam masa kehamilan, persalinan, dan pasca-persalinan.</li>
-          <li>Menghadirkan tenaga medis dan perawat yang kompeten dan penuh empati.</li>
-          <li>Mendukung kesehatan keluarga dengan layanan home visit yang terpercaya dan responsif.</li>
-        </ul>
-      </div>
+  <nav>
+    <a href="#profil">Profil</a>
+    <a href="#layanan">Layanan</a>
+    <a href="#pendaftaran">Pendaftaran</a>
+    <a href="#kontak">Kontak</a>
+    <a href="#galeri">Galeri</a>
+    <a href="#blog">Blog</a>
+  </nav>
+
+  <section id="profil">
+    <h2>Profil Homecare</h2>
+    <p>Motherhood Homecare adalah layanan homecare profesional untuk ibu dan anak. Kami berkomitmen memberikan perawatan terbaik langsung di rumah Anda.</p>
+    <h3>Visi</h3>
+    <p>Menjadi penyedia layanan homecare terpercaya dan unggul bagi ibu dan anak di Indonesia.</p>
+    <h3>Misi</h3>
+    <ul>
+      <li>Menyediakan layanan berkualitas dan profesional.</li>
+      <li>Memberikan kenyamanan dan keamanan pasien.</li>
+      <li>Mendukung kebahagiaan keluarga Indonesia.</li>
+    </ul>
+  </section>
+
+  <section id="layanan">
+    <h2>Daftar Layanan</h2>
+    <ul>
+      <li>Perawatan pasca persalinan</li>
+      <li>Pendampingan menyusui</li>
+      <li>Pemeriksaan bayi dan anak</li>
+      <li>Layanan kebidanan di rumah</li>
+      <li>Konsultasi kesehatan ibu & anak</li>
+    </ul>
+  </section>
+
+  <section id="pendaftaran">
+    <h2>Formulir Pendaftaran Pasien</h2>
+    <form>
+      <input type="text" placeholder="Nama Lengkap" required>
+      <input type="text" placeholder="Alamat" required>
+      <input type="tel" placeholder="No. Telepon" required>
+      <textarea placeholder="Keluhan atau permintaan layanan" required></textarea>
+      <button type="submit">Daftar Sekarang</button>
+    </form>
+  </section>
+
+  <section id="kontak">
+    <h2>Kontak Person</h2>
+    <p>Silakan hubungi: <strong>Nyimas</strong> di <strong>0821-1946-0038</strong></p>
+    <form>
+      <input type="text" placeholder="Nama Anda" required>
+      <input type="email" placeholder="Email" required>
+      <textarea placeholder="Pesan Anda" required></textarea>
+      <button type="submit">Kirim Pesan</button>
+    </form>
+  </section>
+
+  <section id="galeri">
+    <h2>Galeri Foto</h2>
+    <div class="gallery">
+      <img src="PHOTO-2025-05-05-10-26-45.jpg" alt="Galeri 1">
+      <img src="PHOTO-2025-05-05-10-26-45.jpg" alt="Galeri 2">
+      <img src="PHOTO-2025-05-05-10-26-45.jpg" alt="Galeri 3">
     </div>
   </section>
 
+  <section id="blog">
+    <h2>Blog Kesehatan</h2>
+    <p>Sedang dikembangkan. Nantikan berbagai artikel bermanfaat tentang perawatan ibu & anak!</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Motherhood Homecare. All rights reserved.</p>
+  </footer>
 </body>
 </html>
